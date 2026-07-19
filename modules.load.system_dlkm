@@ -58,7 +58,6 @@ rtl8150.ko
 slcan.ko
 slhc.ko
 tipc.ko
-tls.ko
 usbmon.ko
 usbnet.ko
 usbserial.ko
