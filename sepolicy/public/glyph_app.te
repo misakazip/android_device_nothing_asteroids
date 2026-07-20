@@ -1,0 +1,2 @@
+type glyph_app, domain, coredomain;
+type sysfs_glyph, fs_type, sysfs_type;
