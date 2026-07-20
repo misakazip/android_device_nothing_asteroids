@@ -1263,6 +1263,17 @@ vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 
+# FeliCa
+product/app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED
+product/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk;PRESIGNED
+product/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk;PRESIGNED
+product/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk;PRESIGNED
+product/etc/sysconfig/felica-allowlist.xml
+vendor/etc/felica/common.cfg
+vendor/etc/felica/mfm.cfg
+vendor/etc/felica/mfs.cfg
+vendor/etc/init/init.st.felica.rc
+
 # NFC
 vendor/etc/st21nfc_conf_base.txt
 vendor/etc/st21nfc_conf_pro.txt

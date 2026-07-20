@@ -3,8 +3,15 @@
 pbid=$(getprop ro.boot.pbid)
 sku=$(getprop ro.boot.hardware.sku)
 
-if [ -f /sys/bus/i2c/devices/1-0008/hw_version ]; then
-    hwid=$(cat /sys/bus/i2c/devices/1-0008/hw_version)
+if [ "$sku" = "JPN" ]; then
+    setprop persist.vendor.nfc.config_file_name "libnfc-hal-st54j-JPN.conf"
+    setprop persist.vendor.nfc_model "ST54"
+    exit 0
+fi
+
+for hw_version in /sys/bus/i2c/devices/*-0008/hw_version; do
+    [ -f "$hw_version" ] || continue
+    hwid=$(cat "$hw_version")
 
     case "$hwid" in
         "ST21")
@@ -20,13 +27,9 @@ if [ -f /sys/bus/i2c/devices/1-0008/hw_version ]; then
             setprop persist.vendor.nfc_model "ST21"
             ;;
         "ST54")
-            if [ "$sku" = "JPN" ]; then
-                setprop persist.vendor.nfc.config_file_name "libnfc-hal-st54j-JPN.conf"
-            else
-                setprop persist.vendor.nfc.config_file_name "libnfc-hal-st54j-PRO.conf"
-            fi
-
+            setprop persist.vendor.nfc.config_file_name "libnfc-hal-st54j-PRO.conf"
             setprop persist.vendor.nfc_model "ST54"
             ;;
     esac
-fi
+    break
+done
