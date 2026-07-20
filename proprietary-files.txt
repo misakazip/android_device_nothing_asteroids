@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from the B4.1-260414-1749 release for the Nothing Phone (3a).
+## are from the B4.1-260618-1048 release for the Nothing Phone (3a).
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -1269,9 +1269,9 @@ product/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk;PRESIGNED
 product/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk;PRESIGNED
 product/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk;PRESIGNED
 product/etc/sysconfig/felica-allowlist.xml
-vendor/etc/felica/common.cfg
-vendor/etc/felica/mfm.cfg
-vendor/etc/felica/mfs.cfg
+vendor/etc/felica/common.cfg|e9c0e273b0b0dadebe0fec1c681f21d83bc0ff4c
+vendor/etc/felica/mfm.cfg|4c373c800a0a09f678b0f09fb9a3226121f02921
+vendor/etc/felica/mfs.cfg|0adfe851cbe62db27c91bcf314bb708b64059af9
 vendor/etc/init/init.st.felica.rc
 
 # NFC
