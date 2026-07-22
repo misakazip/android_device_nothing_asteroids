@@ -1,3 +1,1 @@
 require board=Asteroids|pineapple
-require version-bootloader=01955-LANAI-1
-require version-baseband=00083-MILOS_GEN_PACK-1.124890.8.129767.2
