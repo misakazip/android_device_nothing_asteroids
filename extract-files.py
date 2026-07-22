@@ -48,6 +48,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/felica/common.cfg': blob_fixup()
+        .add_line_if_missing('02030004,com.android.settings'),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libaudiobase.so')
         .add_needed('libgui_shim.so'),
