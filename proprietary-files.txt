@@ -1009,6 +1009,10 @@ vendor/lib64/libvmfilexfer.so
 vendor/lib64/vendor.hardware.light-V1-ndk_platform.so
 
 # eUICC
+product/app/uimlpaservice/uimlpaservice.apk:product/priv-app/uimlpaservice/uimlpaservice.apk
+product/etc/permissions/lpa.xml
+product/framework/uimgbalibrary.jar:product/framework/uimlpalibrary.jar
+product/lib64/libjni_aidl_service.so
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 # GPS
